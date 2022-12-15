@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import LoginForm from '../components/LoginFrom';
 import Loader from "../components/Loader";
+import logo from '../assets/image/nasa-logo.svg';
 
 const Home = () => {
     const [name, setName] = useState("");
@@ -18,7 +19,12 @@ const Home = () => {
                 changeRes={(data) => setRes(data)}
             />
             <header>
-                <h1>NASA APOD v2</h1>
+                <div className="flex items-center">
+                    <div>
+                        <img src={logo} alt="logoNasa"/>
+                    </div>
+                    <h1>APOD v2</h1>
+                </div>
             </header>
 
             <div className="w-full text-center">
