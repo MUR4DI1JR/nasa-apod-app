@@ -81,7 +81,7 @@ const LoginFrom = ({userName, changeName, changeDate, userDate, changeRes}) => {
                                     <div className="sm:flex sm:items-start">
                                         <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                             <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                                                Hello my friend !
+                                                Hi! this is Nasa Apod...
                                             </Dialog.Title>
                                             <div className="mt-2">
                                                 <input
@@ -91,6 +91,7 @@ const LoginFrom = ({userName, changeName, changeDate, userDate, changeRes}) => {
                                                     onChange={(e) => changeName(e.target.value)}
                                                     placeholder="Name"
                                                 />
+                                                Date of Birth:
                                                 <input
                                                     className="block w-full rounded-md border border-gray-300 outline-none py-[5px] pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     onChange={(e) => changeDate(e.target.value)}
