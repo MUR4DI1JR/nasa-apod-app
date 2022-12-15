@@ -43,6 +43,8 @@ const LoginFrom = ({userName, changeName, changeDate, userDate, changeRes}) => {
                 console.log(e);
             }
         }else {
+            setErrorText("Name must not be empty!");
+            setShowError(true);
             setOpen(true)
         }
     }
