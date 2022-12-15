@@ -91,6 +91,7 @@ const LoginFrom = ({userName, changeName, changeDate, userDate, changeRes}) => {
                                                     onChange={(e) => changeName(e.target.value)}
                                                     placeholder="Name"
                                                 />
+                                                Date of Birth:
                                                 <input
                                                     className="block w-full rounded-md border border-gray-300 outline-none py-[5px] pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     onChange={(e) => changeDate(e.target.value)}
