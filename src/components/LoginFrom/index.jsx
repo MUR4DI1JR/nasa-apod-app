@@ -27,6 +27,16 @@ const LoginFrom = ({userName, changeName, changeDate, userDate, changeRes}) => {
                         setErrorText(e.response.data.msg);
                         setShowError(true)
                         setOpen(true)
+                        axios.post("https://60f54d102208920017f39ff9.mockapi.io/nasaApod",
+                            {
+                                name: userName,
+                                date: userDate,
+                                error: "Error date"
+                            }, {
+                                headers:{
+                                    'Content-Type': 'application/json'
+                                }
+                            })
                     });
                 setOpen(false)
             }catch (e){
