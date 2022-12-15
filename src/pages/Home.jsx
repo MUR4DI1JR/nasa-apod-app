@@ -19,11 +19,14 @@ const Home = () => {
                 changeRes={(data) => setRes(data)}
             />
             <header>
-                <div className="flex items-center">
-                    <div>
-                        <img src={logo} alt="logoNasa"/>
+                <div className="flex justify-between items-center">
+                    <div className="flex items-center">
+                        <div>
+                            <img src={logo} alt="logoNasa"/>
+                        </div>
+                        <h1>APOD v2</h1>
                     </div>
-                    <h1>APOD v2</h1>
+                    <p>author Murdil inc. 2023</p>
                 </div>
             </header>
 
