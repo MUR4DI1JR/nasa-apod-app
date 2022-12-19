@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import LoginForm from '../components/LoginFrom';
 import Loader from "../components/Loader";
 import logo from '../assets/image/nasa-logo.svg';
+import {Link} from "react-router-dom";
+import {ROUTES} from "../constants/routes";
 
 const Home = () => {
     const [name, setName] = useState("");
@@ -26,6 +28,7 @@ const Home = () => {
                         </div>
                         <h1>APOD v2</h1>
                     </div>
+                    <Link to={ROUTES.AI_PAGE}>Generate Space Image</Link>
                     <p>author Murdil inc. 2023</p>
                 </div>
             </header>
