@@ -115,7 +115,7 @@ const CreatePost = () => {
                         </button>
                         <img
                             className="w-full rounded"
-                            src={`http://localhost:5000${imageUrl}`}
+                            src={`${process.env.API_URL}${imageUrl}`}
                             alt="Uploaded"
                         />
                     </>

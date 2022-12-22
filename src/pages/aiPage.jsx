@@ -9,7 +9,7 @@ const AiPage = () => {
         if (!prompt) return alert("Please enter a prompt");
         // setisLoading(true);
         // setImageURL(loadingGIF);
-        const response = await axios.post("http://localhost:5000/openai/generate-image", { prompt });
+        const response = await axios.post(`${process.env.API_URL}/openai/generate-image`, { prompt });
         const image = response.data.image;
 
         console.log(response);

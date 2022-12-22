@@ -24,7 +24,7 @@ const PostItems = ({_id, title, user, text, tags, imageURL, createdAt, viewCount
                 <div>
                     {
                         imageURL ?
-                            <img className="w-full h-[450px] object-cover" src={`http://localhost:5000${imageURL}`}/>
+                            <img className="w-full h-[450px] object-cover" src={`${process.env.API_URL}${imageURL}`}/>
                             :
                             null
                     }

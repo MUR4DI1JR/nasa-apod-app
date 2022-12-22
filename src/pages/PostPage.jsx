@@ -19,7 +19,7 @@ const PostPage = () => {
         <section className="w-[80%] mx-auto flex flex-col items-center px-3">
             <article className="w-full flex flex-col shadow my-4">
                 <div className="hover:opacity-75">
-                    <img className="w-full object-cover" src={`http://localhost:5000${data?.imageURL}`}/>
+                    <img className="w-full object-cover" src={`${process.env.API_URL}${data?.imageURL}`}/>
                 </div>
                 <div className="bg-white flex flex-col justify-start p-6">
                     <div className="flex">
