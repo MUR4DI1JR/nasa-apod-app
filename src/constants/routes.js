@@ -4,5 +4,6 @@ export const ROUTES = {
     REGISTER: '/register',
     USER: '/user',
     AI_PAGE: '/ai-page',
-    POSTS: '/posts'
+    POSTS: '/posts',
+    CREATE_POST: '/add-post'
 }

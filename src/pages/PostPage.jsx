@@ -3,6 +3,7 @@ import {Link, useParams} from "react-router-dom";
 import axios from "../axios";
 import dayjs from "dayjs";
 import {InstagramLogo, TwitterLogo} from "phosphor-react";
+import ReactMarkdown from "react-markdown";
 
 const PostPage = () => {
     const [data, setData] = useState()
@@ -15,10 +16,10 @@ const PostPage = () => {
     }, []);
 
     return (
-        <section className="w-full md:w-2/3 flex flex-col items-center px-3">
-            <article className="flex flex-col shadow my-4">
+        <section className="w-[80%] mx-auto flex flex-col items-center px-3">
+            <article className="w-full flex flex-col shadow my-4">
                 <div className="hover:opacity-75">
-                    <img src={data?.imageURL}/>
+                    <img className="w-full object-cover" src={`http://localhost:5000${data?.imageURL}`}/>
                 </div>
                 <div className="bg-white flex flex-col justify-start p-6">
                     <div className="flex">
@@ -34,7 +35,7 @@ const PostPage = () => {
                         'MM.DD.YYYY',
                     )}
                     </p>
-                    <p className="pb-3">{data?.text}</p>
+                    <div className="pb-3"><ReactMarkdown children={data?.text}/></div>
                 </div>
             </article>
 

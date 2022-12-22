@@ -11,12 +11,12 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import PostPage from "./pages/PostPage";
 import {ToastContainer} from "react-toastify";
-import {useDispatch, useSelector} from "react-redux";
-import {fetchAuthMe, selectUser} from "./redux/slices/auth";
+import {useDispatch} from "react-redux";
+import {fetchAuthMe} from "./redux/slices/auth";
+import CreatePost from "./pages/CreatePost";
 
 const App = () => {
     const dispatch = useDispatch();
-    const isAuth = useSelector(selectUser);
 
     useEffect(() => {
         dispatch(fetchAuthMe())
@@ -43,6 +43,8 @@ const App = () => {
                     <Route path={ROUTES.LOGIN} element={<LoginPage/>}/>
                     <Route path={ROUTES.REGISTER} element={<RegisterPage/>}/>
                     <Route path={`${ROUTES.POSTS}/:id`} element={<PostPage/>}/>
+                    <Route path={ROUTES.CREATE_POST} element={<CreatePost/>}/>
+                    <Route path={`${ROUTES.CREATE_POST}/:id/edit`} element={<CreatePost/>}/>
                 </Routes>
             </div>
         </>

@@ -4,10 +4,12 @@ import {fetchPosts, fetchTags, selectPosts} from "../redux/slices/posts";
 
 import PostItems from "../components/Posts";
 import Sidebar from "../components/Sidebar";
+import {selectUser} from "../redux/slices/auth";
 
 const Home = () => {
     const {posts, tags} = useSelector(selectPosts);
     const dispatch = useDispatch();
+
 
     useEffect(() => {
         dispatch(fetchPosts());

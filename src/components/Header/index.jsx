@@ -139,7 +139,7 @@ export default function Header() {
                             :
                             <>
                                 <Link
-                                    to={ROUTES.LOGIN}
+                                    to={ROUTES.CREATE_POST}
                                     className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
                                 >
                                     Write to posts
