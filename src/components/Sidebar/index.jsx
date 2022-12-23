@@ -6,9 +6,9 @@ const Sidebar = ({tags}) => {
         <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
 
             <div className="w-full bg-white shadow flex flex-col my-4 p-6">
-                {
-                    tags.items?.map((item, i) => <Link key={i} to={`${item}`}>#{item}</Link>)
-                }
+                {/*{*/}
+                {/*    tags.items?.map((item, i) => <Link key={i} to={`${item}`}>#{item}</Link>)*/}
+                {/*}*/}
             </div>
 
             <div className="w-full bg-white shadow flex flex-col my-4 p-6">
