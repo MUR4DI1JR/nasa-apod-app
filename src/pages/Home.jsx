@@ -23,6 +23,9 @@ const Home = () => {
                 {
                     posts.items?.map(item => <PostItems key={item._id} {...item} />)
                 }
+                {
+                    process.env.API_URL
+                }
             </section>
             <Sidebar tags={tags}/>
         </div>
