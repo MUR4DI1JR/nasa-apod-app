@@ -21,7 +21,7 @@ const Home = () => {
         <div className="container mx-auto flex flex-wrap py-6">
             <section className = "w-full md:w-2/3 flex flex-col items-center px-3">
                 {
-                    posts.items.map(item => <PostItems key={item._id} {...item} />)
+                    posts.items?.map(item => <PostItems key={item._id} {...item} />)
                 }
             </section>
             <Sidebar tags={tags}/>
