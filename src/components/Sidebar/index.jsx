@@ -7,7 +7,7 @@ const Sidebar = ({tags}) => {
 
             <div className="w-full bg-white shadow flex flex-col my-4 p-6">
                 {
-                    tags?.items.map((item, i) => <Link key={i} to={`${item}`}>#{item}</Link>)
+                    tags.items?.map((item, i) => <Link key={i} to={`${item}`}>#{item}</Link>)
                 }
             </div>
 
